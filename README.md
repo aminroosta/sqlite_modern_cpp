@@ -48,7 +48,7 @@ int main() {
 
       cout << "The new record got assigned id " << db.last_insert_rowid() << endl;
 
-      // slects from user table on a condition ( age > 18 ) and executes
+      // selects from user table on a condition ( age > 18 ) and executes
       // the lambda for each row returned .
       db << "select age,name,weight from user where age > ? ;"
          << 18
